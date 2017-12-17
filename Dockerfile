@@ -1,6 +1,6 @@
-RUN echo 'Building controlling node'
-
 FROM ubuntu:16.04
+
+RUN echo "Building up Master node"
 
 MAINTAINER wprince
 

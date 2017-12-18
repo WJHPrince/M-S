@@ -22,8 +22,6 @@ EXPOSE 80
 # when creating a new container
 RUN service nginx start
 
-RUN systemctl status nginx.service
-
 RUN sleep 5
 
 WORKDIR /etc/nginx

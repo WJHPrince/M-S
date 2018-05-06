@@ -1,0 +1,26 @@
+version: "2"
+services:
+  salve1:
+    image: nginx
+    volumes:
+      - "./sites/index.html:/usr/share/nginx/html/index.html"
+    expose:
+      - 80
+      - 443
+  salve2:
+    image: nginx
+    volumes:
+      - "./sites/index.html:/usr/share/nginx/html/index.html"
+    expose:
+      - 80
+      - 443
+  upper:
+    image: nginx
+    volumes:
+      - "./nginx.conf:/etc/nginx/nginx.conf"
+    ports:
+      - 443:443
+      - 80:80
+    links:
+      - salve1
+      - salve2

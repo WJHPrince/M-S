@@ -12,9 +12,9 @@
 ## 使用方法
 安装`Docker`和`docker-compose`，将页面导入到`sites`目录下，准备完成后，返回项目目录下，在命令行中输入(以`root`身份运行）：
 ```bash
-socker-compose up
+docker-compose up
 ```
-如果看到类似于以下提示：
+如果看到类似于以下提示,则正常：
 ```bash
 Creating ms_salve2_1
 Creating ms_salve1_1

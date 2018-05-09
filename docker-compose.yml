@@ -3,14 +3,14 @@ services:
   salve1:
     image: nginx
     volumes:
-      - "./sites/index.html:/usr/share/nginx/html/index.html"
+      - "./sites/:/usr/share/nginx/html/"
     expose:
       - 80
       - 443
   salve2:
     image: nginx
     volumes:
-      - "./sites/index.html:/usr/share/nginx/html/index.html"
+      - "./sites/:/usr/share/nginx/html/"
     expose:
       - 80
       - 443
